@@ -34,3 +34,9 @@ extension Color {
     static let verdigirs = Color("verdigris")
     static let yellowOrange = Color("yellowOrange")
 }
+
+extension Gradient {
+    static let ebonyClay = Gradient(colors: [Color.ebonyClay, Color.ebonyClayLight])
+    static let oxfordBlue = Gradient(colors: [Color.oxfordBlue, Color.oxfordBlueLight])
+    static let shamrock = Gradient(colors: [Color.shamrock, Color.shamrockLight])
+}
