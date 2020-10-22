@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E9204992541791700E9C066 /* SparringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204982541791700E9C066 /* SparringApp.swift */; };
-		2E92049B2541791700E9C066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92049A2541791700E9C066 /* ContentView.swift */; };
+		2E92049B2541791700E9C066 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92049A2541791700E9C066 /* SignInView.swift */; };
 		2E92049D2541791800E9C066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E92049C2541791800E9C066 /* Assets.xcassets */; };
 		2E9204A02541791800E9C066 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E92049F2541791800E9C066 /* Preview Assets.xcassets */; };
 		2E9204A22541791800E9C066 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204A12541791800E9C066 /* Persistence.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2E9204952541791700E9C066 /* Sparring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sparring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9204982541791700E9C066 /* SparringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringApp.swift; sourceTree = "<group>"; };
-		2E92049A2541791700E9C066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2E92049A2541791700E9C066 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		2E92049C2541791800E9C066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E92049F2541791800E9C066 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2E9204A12541791800E9C066 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -106,7 +106,6 @@
 				2E9204CB25417AEE00E9C066 /* Assets */,
 				2E9204D4254191CA00E9C066 /* Modules */,
 				2E9204982541791700E9C066 /* SparringApp.swift */,
-				2E92049A2541791700E9C066 /* ContentView.swift */,
 				2E9204A12541791800E9C066 /* Persistence.swift */,
 				2E9204A62541791800E9C066 /* Info.plist */,
 				2E9204A32541791800E9C066 /* Sparring.xcdatamodeld */,
@@ -153,6 +152,7 @@
 		2E9204D4254191CA00E9C066 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2E9204E725419F5C00E9C066 /* PresentationModule */,
 				2E9204D5254191D700E9C066 /* UtilityModule */,
 			);
 			path = Modules;
@@ -164,6 +164,30 @@
 				2E9204D62541922000E9C066 /* Color+Default.swift */,
 			);
 			path = UtilityModule;
+			sourceTree = "<group>";
+		};
+		2E9204E725419F5C00E9C066 /* PresentationModule */ = {
+			isa = PBXGroup;
+			children = (
+				2E9204E825419F8200E9C066 /* Sign In */,
+			);
+			path = PresentationModule;
+			sourceTree = "<group>";
+		};
+		2E9204E825419F8200E9C066 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				2E9204E925419F9400E9C066 /* View */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		2E9204E925419F9400E9C066 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E92049A2541791700E9C066 /* SignInView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E9204A22541791800E9C066 /* Persistence.swift in Sources */,
-				2E92049B2541791700E9C066 /* ContentView.swift in Sources */,
+				2E92049B2541791700E9C066 /* SignInView.swift in Sources */,
 				2E9204D72541922000E9C066 /* Color+Default.swift in Sources */,
 				2E9204992541791700E9C066 /* SparringApp.swift in Sources */,
 				2E9204A52541791800E9C066 /* Sparring.xcdatamodeld in Sources */,
