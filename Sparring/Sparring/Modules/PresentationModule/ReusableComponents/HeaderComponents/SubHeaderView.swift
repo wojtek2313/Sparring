@@ -1,5 +1,5 @@
 //
-//  HeaderView.swift
+//  SubHeaderView.swift
 //  Sparring
 //
 //  Created by Wojciech Kulas on 22/10/2020.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct HeaderView: View {
+struct SubHeaderView: View {
     
-    // MARK: - ENVIRONMENT VARIABLES
+    // MARK: - ENVIRONMENT PROPERTIES
     
-    @Environment (\.colorScheme) private var colorScheme
+    @Environment(\.colorScheme) var colorScheme
     
     // MARK: - PRIVATE PROPERTIES
     
-    private let title: String
+    private var title: String
     
     // MARK: - STRUCT CONSTRUCTOR
     
@@ -27,16 +27,16 @@ struct HeaderView: View {
     
     var body: some View {
         Text(title)
-            .font(.custom("Helvetica", size: 42))
-            .bold()
+            .font(.custom("Helvetica", size: 24))
+            .fontWeight(.light)
             .foregroundColor(
-                colorScheme == .dark ? .white : .gableGreen
+                colorScheme == .dark ? .gullGray : .grannySmith
             )
     }
 }
 
-struct HeaderView_Previews: PreviewProvider {
+struct SubHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(title: "Wellcome!")
+        SubHeaderView(title: "Sign in to continue")
     }
 }

@@ -18,7 +18,7 @@ struct BackgroundView: View {
     @ViewBuilder
     var body: some View {
         if colorScheme == .dark {
-            LinearGradient(gradient: Gradient.ebonyClay, startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: .ebonyClay, startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
         } else {
             Color(.white)

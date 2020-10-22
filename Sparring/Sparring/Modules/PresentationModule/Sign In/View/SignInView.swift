@@ -13,9 +13,13 @@ struct SignInView: View {
     // MARK: - BODY PROPERTY
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .leading) {
             BackgroundView()
-            HeaderView(title: "Wellcome!")
+            VStack(alignment: .leading) {
+                HeaderView(title: "Wellcome!")
+                SubHeaderView(title: "Sign in to continue")
+            }
+            .padding()
         }
     }
 }
