@@ -154,7 +154,6 @@
 		2E9204D4254191CA00E9C066 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2ECFC9CC2541A91500869E4A /* ReusableComponents */,
 				2ECFC9C42541A81C00869E4A /* PresentationModule */,
 				2E9204D5254191D700E9C066 /* UtilityModule */,
 			);
@@ -200,6 +199,7 @@
 		2ECFC9C42541A81C00869E4A /* PresentationModule */ = {
 			isa = PBXGroup;
 			children = (
+				2ECFC9CC2541A91500869E4A /* ReusableComponents */,
 				2ECFC9C52541A85000869E4A /* Sign In */,
 			);
 			path = PresentationModule;
