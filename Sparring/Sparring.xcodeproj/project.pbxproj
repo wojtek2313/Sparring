@@ -110,10 +110,6 @@
 				2E9204F02541A22200E9C066 /* Default */,
 				2E9204CB25417AEE00E9C066 /* Assets */,
 				2E9204D4254191CA00E9C066 /* Modules */,
-				2E9204982541791700E9C066 /* SparringApp.swift */,
-				2E92049A2541791700E9C066 /* SignInView.swift */,
-				2E9204A12541791800E9C066 /* Persistence.swift */,
-				2E9204A62541791800E9C066 /* Info.plist */,
 				2E9204A32541791800E9C066 /* Sparring.xcdatamodeld */,
 				2E92049E2541791800E9C066 /* Preview Content */,
 			);
@@ -158,7 +154,8 @@
 		2E9204D4254191CA00E9C066 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2E9204F62541A27A00E9C066 /* Extensions */,
+				2ECFC9CC2541A91500869E4A /* ReusableComponents */,
+				2ECFC9C42541A81C00869E4A /* PresentationModule */,
 				2E9204D5254191D700E9C066 /* UtilityModule */,
 			);
 			path = Modules;
@@ -167,7 +164,7 @@
 		2E9204D5254191D700E9C066 /* UtilityModule */ = {
 			isa = PBXGroup;
 			children = (
-				2E9204D62541922000E9C066 /* Color+Default.swift */,
+				2E9204F62541A27A00E9C066 /* Extensions */,
 			);
 			path = UtilityModule;
 			sourceTree = "<group>";
@@ -175,6 +172,9 @@
 		2E9204F02541A22200E9C066 /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				2E9204A62541791800E9C066 /* Info.plist */,
+				2E9204A12541791800E9C066 /* Persistence.swift */,
+				2E9204982541791700E9C066 /* SparringApp.swift */,
 				2E9204F12541A24D00E9C066 /* Localizable.strings */,
 			);
 			path = Default;
@@ -183,6 +183,7 @@
 		2E9204F62541A27A00E9C066 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2ECFC9CB2541A8EB00869E4A /* Color */,
 				2E9204F72541A28F00E9C066 /* Strings */,
 			);
 			path = Extensions;
@@ -194,6 +195,45 @@
 				2E9204F82541A2B400E9C066 /* String+Localized.swift */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		2ECFC9C42541A81C00869E4A /* PresentationModule */ = {
+			isa = PBXGroup;
+			children = (
+				2ECFC9C52541A85000869E4A /* Sign In */,
+			);
+			path = PresentationModule;
+			sourceTree = "<group>";
+		};
+		2ECFC9C52541A85000869E4A /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				2ECFC9C62541A86700869E4A /* View */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		2ECFC9C62541A86700869E4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E92049A2541791700E9C066 /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2ECFC9CB2541A8EB00869E4A /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				2E9204D62541922000E9C066 /* Color+Default.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		2ECFC9CC2541A91500869E4A /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,7 +533,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sparring/Preview Content\"";
 				DEVELOPMENT_TEAM = J4563W7S2E;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Sparring/Info.plist;
+				INFOPLIST_FILE = Sparring/Default/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +555,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sparring/Preview Content\"";
 				DEVELOPMENT_TEAM = J4563W7S2E;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Sparring/Info.plist;
+				INFOPLIST_FILE = Sparring/Default/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
