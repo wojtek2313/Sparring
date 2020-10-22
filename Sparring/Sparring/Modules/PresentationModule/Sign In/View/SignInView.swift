@@ -9,8 +9,14 @@ import SwiftUI
 import CoreData
 
 struct SignInView: View {
+    
+    // MARK: - BODY PROPERTY
+    
     var body: some View {
-        Text("Hello World")
+        ZStack {
+            BackgroundView()
+            HeaderView(title: "Wellcome!")
+        }
     }
 }
 

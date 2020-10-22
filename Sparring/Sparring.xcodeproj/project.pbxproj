@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E7BF11F2541C9040076CD26 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BF11E2541C9040076CD26 /* HeaderView.swift */; };
+		2E7BF1242541D4F10076CD26 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BF1232541D4F10076CD26 /* BackgroundView.swift */; };
 		2E9204992541791700E9C066 /* SparringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204982541791700E9C066 /* SparringApp.swift */; };
 		2E92049B2541791700E9C066 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92049A2541791700E9C066 /* SignInView.swift */; };
 		2E92049D2541791800E9C066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E92049C2541791800E9C066 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E7BF11E2541C9040076CD26 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2E7BF1232541D4F10076CD26 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		2E9204952541791700E9C066 /* Sparring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sparring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9204982541791700E9C066 /* SparringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringApp.swift; sourceTree = "<group>"; };
 		2E92049A2541791700E9C066 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 		2ECFC9CC2541A91500869E4A /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2E7BF11E2541C9040076CD26 /* HeaderView.swift */,
+				2E7BF1232541D4F10076CD26 /* BackgroundView.swift */,
 			);
 			path = ReusableComponents;
 			sourceTree = "<group>";
@@ -369,10 +375,12 @@
 			files = (
 				2E9204F92541A2B400E9C066 /* String+Localized.swift in Sources */,
 				2E9204A22541791800E9C066 /* Persistence.swift in Sources */,
+				2E7BF1242541D4F10076CD26 /* BackgroundView.swift in Sources */,
 				2E92049B2541791700E9C066 /* SignInView.swift in Sources */,
 				2E9204D72541922000E9C066 /* Color+Default.swift in Sources */,
 				2E9204992541791700E9C066 /* SparringApp.swift in Sources */,
 				2E9204A52541791800E9C066 /* Sparring.xcdatamodeld in Sources */,
+				2E7BF11F2541C9040076CD26 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
