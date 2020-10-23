@@ -13,14 +13,34 @@ struct SignInView: View {
     // MARK: - BODY PROPERTY
     
     var body: some View {
-        ZStack(alignment: .leading) {
-            BackgroundView()
+        NavigationView {
+            ZStack(alignment: .leading) {
+                BackgroundView()
+                VStack {
+                    signInHeader()
+                    signInButton()
+                }
+            }
+        }
+    }
+    
+    // MARK: - PRIVATE METHODS
+    
+    private func signInHeader() -> some View {
+        return HStack {
             VStack(alignment: .leading) {
                 HeaderView(title: "Wellcome!")
                 SubHeaderView(title: "Sign in to continue")
             }
-            .padding()
+            .padding(.leading)
+            Spacer()
         }
+    }
+    
+    private func signInButton() -> some View {
+        return Button(action: { print("test")}, label: {
+            SparringMainButtonView(title: "Sign in")
+        })
     }
 }
 

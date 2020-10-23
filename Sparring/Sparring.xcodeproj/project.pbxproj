@@ -22,6 +22,7 @@
 		2E9204D72541922000E9C066 /* Color+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204D62541922000E9C066 /* Color+Default.swift */; };
 		2E9204F22541A24D00E9C066 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E9204F12541A24D00E9C066 /* Localizable.strings */; };
 		2E9204F92541A2B400E9C066 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204F82541A2B400E9C066 /* String+Localized.swift */; };
+		2E9BE7542543289300814F1E /* SparringMainButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BE7532543289300814F1E /* SparringMainButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2E9204D62541922000E9C066 /* Color+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Default.swift"; sourceTree = "<group>"; };
 		2E9204F12541A24D00E9C066 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2E9204F82541A2B400E9C066 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		2E9BE7532543289300814F1E /* SparringMainButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringMainButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,14 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		2E9BE7522543282F00814F1E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BE7532543289300814F1E /* SparringMainButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		2ECFC9C42541A81C00869E4A /* PresentationModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +257,7 @@
 		2ECFC9CC2541A91500869E4A /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2E9BE7522543282F00814F1E /* Buttons */,
 				2E7BF1282541D88A0076CD26 /* HeaderComponents */,
 				2E7BF1232541D4F10076CD26 /* BackgroundView.swift */,
 			);
@@ -387,6 +398,7 @@
 				2E9204F92541A2B400E9C066 /* String+Localized.swift in Sources */,
 				2E9204A22541791800E9C066 /* Persistence.swift in Sources */,
 				2E7BF1242541D4F10076CD26 /* BackgroundView.swift in Sources */,
+				2E9BE7542543289300814F1E /* SparringMainButtonView.swift in Sources */,
 				2E92049B2541791700E9C066 /* SignInView.swift in Sources */,
 				2E9204D72541922000E9C066 /* Color+Default.swift in Sources */,
 				2E7BF12A2541D8A60076CD26 /* SubHeaderView.swift in Sources */,
