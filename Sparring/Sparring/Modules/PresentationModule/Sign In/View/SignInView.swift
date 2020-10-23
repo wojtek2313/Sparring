@@ -10,6 +10,10 @@ import CoreData
 
 struct SignInView: View {
     
+    // MARK: - ENVIRONMENT VARIABLES
+    
+    @Environment(\.colorScheme) var colorScheme
+    
     // MARK: - BODY PROPERTY
     
     var body: some View {
@@ -19,13 +23,16 @@ struct SignInView: View {
                 VStack {
                     signInHeader()
                     signInButton()
+                    resetPasswordButton()
                 }
             }
         }
     }
-    
-    // MARK: - PRIVATE METHODS
-    
+}
+
+// MARK: - PRIVATE METHODS
+
+extension SignInView {
     private func signInHeader() -> some View {
         return HStack {
             VStack(alignment: .leading) {
@@ -41,6 +48,15 @@ struct SignInView: View {
         return Button(action: { print("test")}, label: {
             SparringMainButtonView(title: "login_sign_in".localized)
         })
+    }
+    
+    private func resetPasswordButton() -> some View {
+        return NavigationLink(destination: ResetView()) {
+            Text("login_forgot_password".localized)
+                .foregroundColor(
+                    colorScheme == .dark ? .gullGray : .grannySmith
+                )
+        }
     }
 }
 
