@@ -1,1 +1,5 @@
+// MARK: - LOGIN
 
+"login_wellcome" = "Wellcome!";
+"login_sign_in_to_continue" = "Sign in to continue";
+"login_sign_in" = "Sign in";

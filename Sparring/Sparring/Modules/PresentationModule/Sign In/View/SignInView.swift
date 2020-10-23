@@ -29,8 +29,8 @@ struct SignInView: View {
     private func signInHeader() -> some View {
         return HStack {
             VStack(alignment: .leading) {
-                HeaderView(title: "Wellcome!")
-                SubHeaderView(title: "Sign in to continue")
+                HeaderView(title: "login_wellcome".localized)
+                SubHeaderView(title: "login_sign_in_to_continue".localized)
             }
             .padding(.leading)
             Spacer()
@@ -39,7 +39,7 @@ struct SignInView: View {
     
     private func signInButton() -> some View {
         return Button(action: { print("test")}, label: {
-            SparringMainButtonView(title: "Sign in")
+            SparringMainButtonView(title: "login_sign_in".localized)
         })
     }
 }
