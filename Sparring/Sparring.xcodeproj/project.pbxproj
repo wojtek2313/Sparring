@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E61763C25441241007170F9 /* DarkGreenViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61763B25441241007170F9 /* DarkGreenViewModifier.swift */; };
 		2E6BB63B25435B4800EF0FA8 /* ResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6BB63A25435B4800EF0FA8 /* ResetView.swift */; };
+		2E72FA6725449A0300FC8153 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E72FA6625449A0300FC8153 /* CreateAccount.swift */; };
 		2E7BF11F2541C9040076CD26 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BF11E2541C9040076CD26 /* HeaderView.swift */; };
 		2E7BF1242541D4F10076CD26 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BF1232541D4F10076CD26 /* BackgroundView.swift */; };
 		2E7BF12A2541D8A60076CD26 /* SubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BF1292541D8A60076CD26 /* SubHeaderView.swift */; };
@@ -44,7 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E61763B25441241007170F9 /* DarkGreenViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGreenViewModifier.swift; sourceTree = "<group>"; };
 		2E6BB63A25435B4800EF0FA8 /* ResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetView.swift; sourceTree = "<group>"; };
+		2E72FA6625449A0300FC8153 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		2E7BF11E2541C9040076CD26 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2E7BF1232541D4F10076CD26 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		2E7BF1292541D8A60076CD26 /* SubHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeaderView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E61763525440493007170F9 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2E61763A2544121D007170F9 /* DarkGreen */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		2E61763A2544121D007170F9 /* DarkGreen */ = {
+			isa = PBXGroup;
+			children = (
+				2E61763B25441241007170F9 /* DarkGreenViewModifier.swift */,
+			);
+			path = DarkGreen;
+			sourceTree = "<group>";
+		};
 		2E6BB63825435B1900EF0FA8 /* Reset */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +126,22 @@
 			isa = PBXGroup;
 			children = (
 				2E6BB63A25435B4800EF0FA8 /* ResetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E72FA64254499D100FC8153 /* Create Account */ = {
+			isa = PBXGroup;
+			children = (
+				2E72FA65254499F100FC8153 /* View */,
+			);
+			path = "Create Account";
+			sourceTree = "<group>";
+		};
+		2E72FA65254499F100FC8153 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E72FA6625449A0300FC8153 /* CreateAccount.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,8 +278,10 @@
 		2ECFC9C42541A81C00869E4A /* PresentationModule */ = {
 			isa = PBXGroup;
 			children = (
-				2ECFC9CC2541A91500869E4A /* ReusableComponents */,
+				2E61763525440493007170F9 /* View Modifiers */,
+				2ECFC9CC2541A91500869E4A /* Reusable Components */,
 				2ECFC9C52541A85000869E4A /* Sign In */,
+				2E72FA64254499D100FC8153 /* Create Account */,
 				2E6BB63825435B1900EF0FA8 /* Reset */,
 			);
 			path = PresentationModule;
@@ -273,14 +311,14 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
-		2ECFC9CC2541A91500869E4A /* ReusableComponents */ = {
+		2ECFC9CC2541A91500869E4A /* Reusable Components */ = {
 			isa = PBXGroup;
 			children = (
 				2E9BE7522543282F00814F1E /* Buttons */,
 				2E7BF1282541D88A0076CD26 /* HeaderComponents */,
 				2E7BF1232541D4F10076CD26 /* BackgroundView.swift */,
 			);
-			path = ReusableComponents;
+			path = "Reusable Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,9 +456,11 @@
 				2E9204A22541791800E9C066 /* Persistence.swift in Sources */,
 				2E7BF1242541D4F10076CD26 /* BackgroundView.swift in Sources */,
 				2E9BE7542543289300814F1E /* SparringMainButtonView.swift in Sources */,
+				2E72FA6725449A0300FC8153 /* CreateAccount.swift in Sources */,
 				2E92049B2541791700E9C066 /* SignInView.swift in Sources */,
 				2E6BB63B25435B4800EF0FA8 /* ResetView.swift in Sources */,
 				2E9204D72541922000E9C066 /* Color+Default.swift in Sources */,
+				2E61763C25441241007170F9 /* DarkGreenViewModifier.swift in Sources */,
 				2E7BF12A2541D8A60076CD26 /* SubHeaderView.swift in Sources */,
 				2E9204992541791700E9C066 /* SparringApp.swift in Sources */,
 				2E9204A52541791800E9C066 /* Sparring.xcdatamodeld in Sources */,

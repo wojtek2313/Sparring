@@ -24,6 +24,18 @@ struct SignInView: View {
                     signInHeader()
                     signInButton()
                     resetPasswordButton()
+                    NavigationLink(destination: CreateAccount()) {
+                        HStack {
+                            Spacer()
+                            Text("Create an account")
+                                .font(.custom("Helvetica", size: 16))
+                                .bold()
+                            Spacer()
+                        }
+                        .frame(height: 58)
+                    }
+                    .darkGreenViewModifier()
+                    .padding()
                 }
             }
         }

@@ -36,6 +36,7 @@ extension Color {
     static let gableGreen = Color("gableGreen")
     static let grannySmith = Color("grannySmith")
     static let caribbeanGreen = Color("caribbeanGreen")
+    static let grannyApple = Color("grannyApple")
 }
 
 extension Gradient {
