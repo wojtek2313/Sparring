@@ -21,21 +21,13 @@ struct SignInView: View {
             ZStack(alignment: .leading) {
                 BackgroundView()
                 VStack {
+                    Spacer()
                     signInHeader()
                     signInButton()
                     resetPasswordButton()
-                    NavigationLink(destination: CreateAccount()) {
-                        HStack {
-                            Spacer()
-                            Text("Create an account")
-                                .font(.custom("Helvetica", size: 16))
-                                .bold()
-                            Spacer()
-                        }
-                        .frame(height: 58)
-                    }
-                    .darkGreenViewModifier()
-                    .padding()
+                    Spacer()
+                    createAnAccountButton()
+                        .padding()
                 }
             }
         }
@@ -69,6 +61,21 @@ extension SignInView {
                     colorScheme == .dark ? .gullGray : .grannySmith
                 )
         }
+    }
+    
+    private func createAnAccountButton() -> some View {
+        NavigationLink(destination: CreateAccount()) {
+            HStack {
+                Spacer()
+                Text("Create an account")
+                    .font(.custom("Helvetica", size: 16))
+                    .bold()
+                Spacer()
+            }
+            .frame(height: 58)
+        }
+        .darkGreenViewModifier()
+        .padding()
     }
 }
 
