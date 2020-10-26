@@ -14,6 +14,11 @@ struct SignInView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    // MARK: - STATES VARIABLES
+    
+    @State private var userNameInput: String = ""
+    @State private var userPassword: String = ""
+    
     // MARK: - BODY PROPERTY
     
     var body: some View {
@@ -23,14 +28,23 @@ struct SignInView: View {
                 VStack {
                     Spacer()
                     signInHeader()
+                    
+                    SparringTextFieldView(textPlaceholder: "Your name",
+                                          textfieldImageName: "username_icon",
+                                          textFieldInput: $userNameInput,
+                                          displayAlert: .constant(false))
+                    
+                    SparringSecureTextField(secureInput: $userPassword,
+                                            securePlaceholder: "Password",
+                                            secureImageName: "password_icon")
+                    Spacer()
                     signInButton()
                     resetPasswordButton()
-                    Spacer()
                     createAnAccountButton()
-                        .padding()
+                    Spacer()
                 }
             }
-        }
+        }.navigationBarHidden(true)
     }
 }
 
@@ -60,6 +74,7 @@ extension SignInView {
                 .foregroundColor(
                     colorScheme == .dark ? .gullGray : .grannySmith
                 )
+                .padding(.bottom)
         }
     }
     
@@ -76,6 +91,7 @@ extension SignInView {
         }
         .darkGreenViewModifier()
         .padding()
+        .padding(.bottom, 45)
     }
 }
 
