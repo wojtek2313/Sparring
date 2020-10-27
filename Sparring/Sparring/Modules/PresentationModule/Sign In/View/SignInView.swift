@@ -29,13 +29,13 @@ struct SignInView: View {
                     Spacer()
                     signInHeader()
                     
-                    SparringTextFieldView(textPlaceholder: "Your name",
+                    SparringTextFieldView(textPlaceholder: "login_name".localized,
                                           textfieldImageName: "username_icon",
                                           textFieldInput: $userNameInput,
                                           displayAlert: .constant(false))
                     
                     SparringSecureTextField(secureInput: $userPassword,
-                                            securePlaceholder: "Password",
+                                            securePlaceholder: "login_password".localized,
                                             secureImageName: "password_icon")
                     Spacer()
                     signInButton()
@@ -82,7 +82,7 @@ extension SignInView {
         NavigationLink(destination: CreateAccount()) {
             HStack {
                 Spacer()
-                Text("Create an account")
+                Text("login_create_account".localized)
                     .font(.custom("Helvetica", size: 16))
                     .bold()
                 Spacer()

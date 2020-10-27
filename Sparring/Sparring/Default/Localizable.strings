@@ -4,3 +4,6 @@
 "login_sign_in_to_continue" = "Sign in to continue";
 "login_sign_in" = "Sign in";
 "login_forgot_password" = "Forgot password?";
+"login_name" = "Your name";
+"login_password" = "Password";
+"login_create_account" = "Create an account";"
