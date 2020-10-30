@@ -23,7 +23,7 @@
 		2E9204A22541791800E9C066 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204A12541791800E9C066 /* Persistence.swift */; };
 		2E9204A52541791800E9C066 /* Sparring.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204A32541791800E9C066 /* Sparring.xcdatamodeld */; };
 		2E9204B02541791800E9C066 /* SparringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204AF2541791800E9C066 /* SparringTests.swift */; };
-		2E9204BB2541791800E9C066 /* SparringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204BA2541791800E9C066 /* SparringUITests.swift */; };
+		2E9204BB2541791800E9C066 /* SignInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204BA2541791800E9C066 /* SignInUITests.swift */; };
 		2E9204D025417B1600E9C066 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9204CF25417B1600E9C066 /* Colors.xcassets */; };
 		2E9204D72541922000E9C066 /* Color+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9204D62541922000E9C066 /* Color+Default.swift */; };
 		2E9204F22541A24D00E9C066 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E9204F12541A24D00E9C066 /* Localizable.strings */; };
@@ -70,7 +70,7 @@
 		2E9204AF2541791800E9C066 /* SparringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringTests.swift; sourceTree = "<group>"; };
 		2E9204B12541791800E9C066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9204B62541791800E9C066 /* SparringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E9204BA2541791800E9C066 /* SparringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringUITests.swift; sourceTree = "<group>"; };
+		2E9204BA2541791800E9C066 /* SignInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUITests.swift; sourceTree = "<group>"; };
 		2E9204BC2541791800E9C066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9204CF25417B1600E9C066 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2E9204D62541922000E9C066 /* Color+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Default.swift"; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 		2E9204B92541791800E9C066 /* SparringUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2E9204BA2541791800E9C066 /* SparringUITests.swift */,
+				2EDC3219254C5FC000595D18 /* App Flow */,
 				2E9204BC2541791800E9C066 /* Info.plist */,
 			);
 			path = SparringUITests;
@@ -336,6 +336,22 @@
 				2E7BF1232541D4F10076CD26 /* BackgroundView.swift */,
 			);
 			path = "Reusable Components";
+			sourceTree = "<group>";
+		};
+		2EDC3219254C5FC000595D18 /* App Flow */ = {
+			isa = PBXGroup;
+			children = (
+				2EDC321A254C5FDB00595D18 /* Sign In */,
+			);
+			path = "App Flow";
+			sourceTree = "<group>";
+		};
+		2EDC321A254C5FDB00595D18 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				2E9204BA2541791800E9C066 /* SignInUITests.swift */,
+			);
+			path = "Sign In";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,7 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9204BB2541791800E9C066 /* SparringUITests.swift in Sources */,
+				2E9204BB2541791800E9C066 /* SignInUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

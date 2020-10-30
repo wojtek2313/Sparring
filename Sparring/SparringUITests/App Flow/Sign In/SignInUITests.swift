@@ -7,7 +7,7 @@
 
 import XCTest
 
-class SparringUITests: XCTestCase {
+class SignInUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,13 +22,18 @@ class SparringUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testCreateAccountButton_onTap_goToCreateAccountView() throws {
+        // given
         let app = XCUIApplication()
+        let createAccountButton = app.buttons["Create an account"]
+        let helloStaticText = app.staticTexts["Hello"]
+        
+        // when
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        createAccountButton.tap()
+        
+        // then
+        XCTAssert(helloStaticText.waitForExistence(timeout: 5))
     }
 
     func testLaunchPerformance() throws {
