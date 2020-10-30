@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Sparring.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E9204B52541791800E9C066"
+               BuildableName = "SparringUITests.xctest"
+               BlueprintName = "SparringUITests"
+               ReferencedContainer = "container:Sparring.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -35,16 +49,6 @@
                BlueprintIdentifier = "2E9204AA2541791800E9C066"
                BuildableName = "SparringTests.xctest"
                BlueprintName = "SparringTests"
-               ReferencedContainer = "container:Sparring.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E9204B52541791800E9C066"
-               BuildableName = "SparringUITests.xctest"
-               BlueprintName = "SparringUITests"
                ReferencedContainer = "container:Sparring.xcodeproj">
             </BuildableReference>
          </TestableReference>
