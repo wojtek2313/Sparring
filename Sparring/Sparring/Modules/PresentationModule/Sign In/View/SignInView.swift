@@ -16,7 +16,7 @@ struct SignInView: View {
     
     // MARK: - STATES VARIABLES
     
-    @State private var userNameInput: String = ""
+    @State private var userMailInput: String = ""
     @State private var userPassword: String = ""
     
     // MARK: - BODY PROPERTY
@@ -29,9 +29,9 @@ struct SignInView: View {
                     Spacer()
                     signInHeader()
                     
-                    SparringTextFieldView(textPlaceholder: "login_name".localized,
-                                          textfieldImageName: "username_icon",
-                                          textFieldInput: $userNameInput,
+                    SparringTextFieldView(textPlaceholder: "login_email".localized,
+                                          textfieldImageName: "mail_icon",
+                                          textFieldInput: $userMailInput,
                                           displayAlert: .constant(false))
                     
                     SparringSecureTextField(secureInput: $userPassword,
