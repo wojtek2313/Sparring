@@ -68,7 +68,9 @@ extension CreateAccount {
     private func createButtonsFooter() -> some View {
         return HStack {
             SparringBackButtonView()
-            SparringMainButtonView(title: "Next")
+            Button(action: { print("test") }) {
+                SparringMainButtonView(title: "Next")
+            }
         }
     }
 }
