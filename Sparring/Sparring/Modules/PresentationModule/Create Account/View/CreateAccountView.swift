@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CreateAccount: View {
+struct CreateAccountView: View {
     
     // MARK: - STATES VARIABLES
     
@@ -24,6 +24,7 @@ struct CreateAccount: View {
         ZStack {
             BackgroundView()
             VStack {
+                Spacer()
                 createAccountHeader()
                 SparringTextFieldView(textPlaceholder: "craete_account_email".localized,
                                       textfieldImageName: "mail_icon",
@@ -43,8 +44,9 @@ struct CreateAccount: View {
                 SparringSecureTextField(secureInput: $repeatPasswordTextFieldInput,
                                         securePlaceholder: "create_account_repeat_password".localized,
                                         secureImageName: "password_icon")
-                
+                Spacer()
                 createButtonsFooter()
+                Spacer()
             }
         }
         .navigationBarHidden(true)
@@ -53,7 +55,7 @@ struct CreateAccount: View {
 
 // MARK: - PRIVATE METHODS
 
-extension CreateAccount {
+extension CreateAccountView {
     private func createAccountHeader() -> some View {
         return HStack {
             VStack(alignment: .leading) {
@@ -68,13 +70,15 @@ extension CreateAccount {
     private func createButtonsFooter() -> some View {
         return HStack {
             SparringBackButtonView()
-            SparringMainButtonView(title: "Next")
+            Button(action: { print("test") }) {
+                SparringMainButtonView(title: "Next")
+            }
         }
     }
 }
 
 struct CreateAccount_Previews: PreviewProvider {
     static var previews: some View {
-        CreateAccount()
+        CreateAccountView()
     }
 }

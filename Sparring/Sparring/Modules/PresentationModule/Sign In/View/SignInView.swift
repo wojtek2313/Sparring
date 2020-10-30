@@ -79,7 +79,7 @@ extension SignInView {
     }
     
     private func createAnAccountButton() -> some View {
-        NavigationLink(destination: CreateAccount()) {
+        NavigationLink(destination: CreateAccountView()) {
             HStack {
                 Spacer()
                 Text("login_create_account".localized)
