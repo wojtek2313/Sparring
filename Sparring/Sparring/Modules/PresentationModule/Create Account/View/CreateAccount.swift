@@ -24,6 +24,7 @@ struct CreateAccount: View {
         ZStack {
             BackgroundView()
             VStack {
+                Spacer()
                 createAccountHeader()
                 SparringTextFieldView(textPlaceholder: "craete_account_email".localized,
                                       textfieldImageName: "mail_icon",
@@ -43,8 +44,9 @@ struct CreateAccount: View {
                 SparringSecureTextField(secureInput: $repeatPasswordTextFieldInput,
                                         securePlaceholder: "create_account_repeat_password".localized,
                                         secureImageName: "password_icon")
-                
+                Spacer()
                 createButtonsFooter()
+                Spacer()
             }
         }
         .navigationBarHidden(true)
