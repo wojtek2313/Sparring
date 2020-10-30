@@ -7,3 +7,13 @@
 "login_name" = "Your name";
 "login_password" = "Password";
 "login_create_account" = "Create an account";
+
+// MARK: - CREATE ACCOUNT
+
+"create_account_hello" = "Hello";
+"create_account_lets_introduce" = "Let's introduce!";
+"craete_account_email" = "Your email";
+"create_account_wrong_email" = "Wrong mail";
+"craete_account_username" = "Your name";
+"create_account_password" = "Password";
+"create_account_repeat_password" = "Repeat password";

@@ -12,7 +12,7 @@ struct SignInView: View {
     
     // MARK: - ENVIRONMENT VARIABLES
     
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) private var colorScheme
     
     // MARK: - STATES VARIABLES
     

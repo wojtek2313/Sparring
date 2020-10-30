@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0AA1C6254C277D00B0D818 /* SparringBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AA1C5254C277D00B0D818 /* SparringBackButtonView.swift */; };
 		2E2E15E32546C23500A10BA8 /* SparringTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E15E22546C23500A10BA8 /* SparringTextFieldView.swift */; };
 		2E2E15EB2546E03A00A10BA8 /* SparringSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E15EA2546E03A00A10BA8 /* SparringSecureTextField.swift */; };
 		2E61763C25441241007170F9 /* DarkGreenViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61763B25441241007170F9 /* DarkGreenViewModifier.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0AA1C5254C277D00B0D818 /* SparringBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringBackButtonView.swift; sourceTree = "<group>"; };
 		2E2E15E22546C23500A10BA8 /* SparringTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringTextFieldView.swift; sourceTree = "<group>"; };
 		2E2E15EA2546E03A00A10BA8 /* SparringSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparringSecureTextField.swift; sourceTree = "<group>"; };
 		2E61763B25441241007170F9 /* DarkGreenViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGreenViewModifier.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				2E9BE7532543289300814F1E /* SparringMainButtonView.swift */,
+				2E0AA1C5254C277D00B0D818 /* SparringBackButtonView.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				2E2E15E32546C23500A10BA8 /* SparringTextFieldView.swift in Sources */,
 				2E7BF1242541D4F10076CD26 /* BackgroundView.swift in Sources */,
 				2E9BE7542543289300814F1E /* SparringMainButtonView.swift in Sources */,
+				2E0AA1C6254C277D00B0D818 /* SparringBackButtonView.swift in Sources */,
 				2E72FA6725449A0300FC8153 /* CreateAccount.swift in Sources */,
 				2E92049B2541791700E9C066 /* SignInView.swift in Sources */,
 				2E6BB63B25435B4800EF0FA8 /* ResetView.swift in Sources */,

@@ -11,7 +11,7 @@ struct SubHeaderView: View {
     
     // MARK: - ENVIRONMENT PROPERTIES
     
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) private var colorScheme
     
     // MARK: - PRIVATE PROPERTIES
     

@@ -11,7 +11,7 @@ struct DarkGreenViewModifier: ViewModifier {
     
     // MARK: - ENVIRONMENT VARIABLES
     
-    @Environment (\.colorScheme) var colorScheme
+    @Environment (\.colorScheme) private var colorScheme
     
     // MARK: - BODY FUNCTION
     
