@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CreateAccount: View {
+struct CreateAccountView: View {
     
     // MARK: - STATES VARIABLES
     
@@ -55,7 +55,7 @@ struct CreateAccount: View {
 
 // MARK: - PRIVATE METHODS
 
-extension CreateAccount {
+extension CreateAccountView {
     private func createAccountHeader() -> some View {
         return HStack {
             VStack(alignment: .leading) {
@@ -79,6 +79,6 @@ extension CreateAccount {
 
 struct CreateAccount_Previews: PreviewProvider {
     static var previews: some View {
-        CreateAccount()
+        CreateAccountView()
     }
 }
