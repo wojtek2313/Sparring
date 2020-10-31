@@ -25,7 +25,6 @@ class SignInUITests: XCTestCase {
         let helloStaticText = app.staticTexts["Hello"]
         
         // when
-        app.launch()
         createAccountButton.tap()
         
         // then
