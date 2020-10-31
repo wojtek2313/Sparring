@@ -6,21 +6,20 @@
 //
 
 import XCTest
+@testable import Sparring
 
 class SignInUITests: XCTestCase {
     
-    var app: XCUIApplication!
+    let app = XCUIApplication()
 
-    override func setUpWithError() throws {
-        app = XCUIApplication()
+    override func setUp() {
         continueAfterFailure = false
+        app.launch()
     }
 
-    override func tearDownWithError() throws {
-        app = nil
-    }
+    override func tearDown() {}
 
-    func testCreateAccountButton_onTap_goToCreateAccountView() throws {
+    func testCreateAccountButton_onTap_goToCreateAccountView() {
         // given
         let createAccountButton = app.buttons["Create an account"]
         let helloStaticText = app.staticTexts["Hello"]
